@@ -1,8 +1,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
     background-color: #0F0F1A; /* Blue-black background */
     color: #FFFFFF; /* White text */
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -32,25 +32,29 @@ body {
     margin: 0; /* Remove default margin */
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr; /* Single column layout */
+/* Link styles */
+a {
+    color: #FFFFFF; /* White link color */
+    text-decoration: none; /* Remove underline */
 }
 
-.box {
-    box-shadow: 0.1em 0.1em 0.2em #90D4FF;
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Education and Experience sections */
+.section {
     border-radius: 0.4em;
-    margin-left: 0.4em;
-    padding: 0.5em;
-    margin-bottom: 0.5em;
-    margin-top: 0.3em;
-    background-color: #1A1A2F; /* Dark blue background */
-    transition: all 0.3s ease; /* Smooth transition on hover */
+    padding: 1em;
+    margin-bottom: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
 }
 
-.box:hover {
-    transform: translateY(-2px); /* Move box up slightly on hover */
-    box-shadow: 0.2em 0.2em 0.4em #90D4FF; /* Increase shadow on hover */
+.section:hover {
+    background-color: #1A1A2F; /* Dark blue background */
+    cursor: pointer;
+
 }
 
 h1, h2, h3 {
